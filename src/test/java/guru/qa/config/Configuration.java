@@ -18,4 +18,16 @@ public interface Configuration extends Config {
     @Key("selenoid.ui.port")
     String selenoidUIPort();
 
+    @Key("ggr.url")
+    String ggrUrl();
+
+    @Key("ggr.port")
+    String ggrPort();
+
+    @Key("ggr.web.username")
+    String ggrWebUsername();
+
+    @Key("ggr.web.userpassword")
+    String ggrWebUserPassword();
+
 }

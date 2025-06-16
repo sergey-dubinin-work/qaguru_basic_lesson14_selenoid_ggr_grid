@@ -1,0 +1,8 @@
+services:
+  ggr:
+    image: aerokube/ggr:latest
+    ports:
+      - "4445:4444"
+    container_name: ggr
+    volumes:
+      - ./grid-router:/etc/grid-router

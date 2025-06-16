@@ -20,9 +20,11 @@ public class TestBase {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1920x1080";
         Configuration.remote = String.format(
-                "%s:%s/wd/hub",
-                getConfig().selenoidUrl(),
-                getConfig().selenoidPort()
+                "http://%s:%s@%s:%s/wd/hub",
+                getConfig().ggrWebUsername(),
+                getConfig().ggrWebUserPassword(),
+                getConfig().ggrUrl(),
+                getConfig().ggrPort()
                 );
 
         ChromeOptions options = new ChromeOptions();
